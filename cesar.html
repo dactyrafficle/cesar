@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<input id='myInput' type='text' value='bob'></input>
+
+<p id='myOutput'></p>
+
+<script>
+
+
+function cesar(msg, shift) {
+ var letterString = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ .';
+ var n = letterString.length;
+ var cipherText = '';
+ for (var i = 0; i < msg.length; i++) {
+  var originalLetter = msg[i];
+  var originalNumber = letterString.indexOf(originalLetter)
+  var newNumberRaw = originalNumber + shift;
+  var newNumberClean = newNumberRaw%n;
+  var newLetter = letterString[newNumberClean];
+  cipherText += newLetter;
+ }
+ return cipherText;
+}
+
+</script>
+</html>
