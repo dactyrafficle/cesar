@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<input id='myInput' type='text' value='bob'></input>
-
-<p id='myOutput'></p>
-
-<script>
-
-
 function cesar(m, s) {
 
  // if 's' is a number OR starts with a number, parseInt will turn it into an integer
@@ -32,6 +22,3 @@ function cesar(m, s) {
  }
  return cipherText;
 }
-
-</script>
-</html>
