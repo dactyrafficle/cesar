@@ -9,6 +9,16 @@
 
 
 function cesar(msg, shift) {
+ 
+ // if 's' is a number OR starts with a number, parseInt will turn it into an integer
+ // and it truncates at the decimal
+ s = parseInt(s);
+ 
+ // but if it begins with a letter, it will return 'NaN'
+ if (!Number.isInteger(s)) {
+  s = 1;
+ }
+ 
  var letterString = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ .';
  var n = letterString.length;
  var cipherText = '';
